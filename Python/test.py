@@ -70,7 +70,7 @@ def add_text_turtle(t):
     """
 
     title = emoji.emojize("Friday, April 10, 2020         多云：:cloud::umbrella:\n\n", use_aliases=True)
-    middle_11 = emoji.emojize("今天是一条调皮小蛇的19岁破壳日☃\n", use_aliases=True)
+    # middle_11 = emoji.emojize("今天是一条调皮小蛇的19岁破壳日☃\n", use_aliases=True)
     middle_12 = " "*7 + "在此有些话，我想对你说：\n"
 
     middle_21 = " "*14 + emoji.emojize("纵有灼灼桃花十里，\n", use_aliases=True)
@@ -86,13 +86,13 @@ def add_text_turtle(t):
     ending_1 = "一笔一划诉春秋，一撇一捺绣温柔，\n"
     ending_2 = "一动一静情无限，一生一世牵你手。\n"
 
-    blessing_1 = emoji.emojize("㊗我的小猪猪生日快乐✉天天开心！\n", use_aliases=True)
+    # blessing_1 = emoji.emojize("㊗我的小猪猪生日快乐✉天天开心！\n", use_aliases=True)
 
-    name_1 = "\n" + " "*36 + "刘晨旭ღ卜宇 "
+    # name_1 = "\n" + " "*36 + "刘晨旭ღ卜宇 "
     # name_2 = "\n" + " "*36 + "刘晨旭❤卜宇 "
 
-    t.write(arg=title + middle_11 + middle_12 + middle_21 + middle_22 + middle_31 + middle_32 + middle_41 + middle_42 + middle_51 + middle_52
-            + middle_53 + ending_1 + ending_2 + blessing_1 + name_1, move=True, align='left', font=("华文行楷", '12', "normal"))
+    t.write(arg=title + middle_12 + middle_21 + middle_22 + middle_31 + middle_32 + middle_41 + middle_42 + middle_51 + middle_52
+            + middle_53 + ending_1 + ending_2, move=True, align='left', font=("华文行楷", '12', "normal"))
     # t.write(middle_3, True, 'right')
     # t.write(name_1, True, 'right')
 
@@ -198,8 +198,6 @@ if __name__ == '__main__':
     t4.daemon = True
 
     t1.start()
-    # time.sleep(0.5)
-    # turtle.bgpic(r"./image/1586171365320.gif")
     t2.start()
 
     # time.sleep(0.5)
